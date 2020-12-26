@@ -1,0 +1,392 @@
+/*MyCustomCSS*/
+
+
+/**************************************************header*/
+/*ハンバーガーメニューを隠す*/
+button.btn--link.site-header__icon.site-header__menu.js-mobile-nav-toggle.mobile-nav--open{
+  display:none !important;
+}
+/*検索バーキャンセルボタン*/
+#SearchDrawer > div > div > div > button > svg > path {
+	color: #dfe3e8 !important;
+}
+/**************************************************トップ画像*/
+#Hero-hero > div{
+  position: relative;
+  
+}
+
+#shopify-section-hero{
+  animation: fadeIn 5s ease 0.3s 1 normal;
+}
+
+/*fadein animation*/
+@keyframes fadeIn { /*animetion-nameで設定した値を書く*/
+
+  0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
+
+  100% {opacity: 1} /*アニメーション終了時は不透明度100%*/
+
+}
+
+/**************************************************横スクロールメニューバー*/
+/*テント・タープ｜テーブル・イス｜焚き火台｜ザック｜アパレル｜other｜*/
+.li{
+  font-weight:900;
+}
+#li-1{
+  background-color:rgba(200, 5, 5, 0.800);
+}
+#li-2{
+  background-color:rgba(180, 100, 100, 0.800);
+}
+#li-3{
+  background-color:rgba(200, 5, 5, 0.800);
+}
+#li-4{
+  background-color:rgba(180, 100, 100, 0.800);
+}
+#li-5{
+  background-color:rgba(200, 5, 5, 0.800);
+}
+.nav-wrap {
+    /* position: relative; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.scroll-nav{
+  width:100%;
+  /*background: #555;*//*メニュー背景色*/
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;/*慣性スクロール*/
+}
+.scroll-nav ul{
+  max-width:100%; /*メニューの最大幅*/
+  min-width:770px;/*メニュー最小幅*/
+  height:40px;
+  line-height:40px;
+  margin: 0 auto ;
+  list-style:none;
+  /*padding-right: 25px;*/ /*右側の固定分余白を空ける*/
+}
+.scroll-nav ul li{
+  border-radius: 5px;
+  float: left;
+  width: 20%; /*メニューの個別の幅*/
+  text-align:center;
+  background-color: #b51717c9;
+  border: none;
+  /*border-color:#0000008f !important;*/
+}
+
+.scroll-nav ul li:hover{
+  background: #222; /*マウスホバー時の背景色*/
+}
+.scroll-nav ul li a{
+  display: inline-block;
+  color: #fff; /*メニューの文字色*/
+  text-decoration: none;
+}
+
+@media only screen and(min-width: 771px){ /*PCサイズで指定*/
+  .scroll-nav ul{
+    padding: 0;
+  }
+  .scroll-nav ul li{
+    width:15%;/*メニューの個別の幅*/
+  }
+  .next-btn{
+    display:none;/*右側の固定部分を非表示*/
+  }
+}
+
+
+/***************************************************search*/
+.grid__item.medium-up--six-tenths.medium-up--push-two-tenths{
+  padding-top:10em !important;
+}
+/*タイトル非表示*/
+#MainContent > div.page-width > div > h1{
+  display:none;
+}
+
+/***************************************************各ページ共通*/
+
+/*リンクの下線非表示*/
+.text-link--accent{
+  border-bottom:none !important;
+}
+@media screen and (max-width:749px){
+  /*ボタン幅調整*/
+  .btn{
+    width: 90% !important;
+  }
+}
+/*タイトル非表示*/
+
+/***************************************************ログインページ*/
+/*タイトル非表示*/
+#LoginHeading{
+  /*display:none;*/
+}
+
+/****************************************************アカウント作成ページ*/
+/*タイトル非表示*/
+#MainContent > div > div > div > div > h1{
+  display:none;
+}
+
+
+/****************************************************新着お知らせ*/
+/*余白調整*/
+.page-width.rich-text{
+  padding-top:0 !important;
+}
+/*お知らせ位置調整*/
+.news{
+  text-align: center;
+  background-color:rgba(252, 213, 128, 0.541);
+}
+/*ブロック余白調整*/
+#shopify-section-160742092741963c85{
+	padding-top:0;
+}
+/*お知らせの余白調整*/
+#shopify-section-160742092741963c85 > div.news > h2{
+  padding-top:2em;
+}
+/****************************************************ギャラリー*/
+/*余白削除*/
+#shopify-section-1607348961a695915f{
+  padding-bottom:0;
+}
+/*****************************************************特集*/
+/*
+#shopify-section-16073484759f5f9562 > div{
+  padding-top:20px;
+}
+*/
+/*特集画像つきテキスト　スクロールするとふわっと表示させる*/
+/*
+.feature-row{
+  opacity:0 !important;
+  transform: translate(0, 45px) !important;
+  transition: all 3000ms !important;
+}
+
+.feature-row.effect-scroll{
+  opacity:1 !important;
+  transform: translate(0, 0) !important;
+}*/
+
+/*おすすめアイテム背景*/
+/*
+#shopify-section-product-recommendations{
+  background-color: rgb(247, 237, 235);
+}*/
+
+/*searchとcart*/
+/*
+#my-{
+  position:absolute;
+  top:0;
+  right:0;
+  margin-top: 3em;
+  margin-right: 3em;
+}
+#my-cart{
+  width:3em !important;
+  float:left;
+  margin:0 1em;
+}*/
+/*トップスライド画像*/
+/*
+.slideshow__overlay{
+  position:relative;
+}*/
+/*header*/
+
+#shopify-section-header > div:nth-child(2){
+  position:absolute;
+}
+
+/*headerの背景を透過*/
+
+.site-header__mobile-nav{
+  background-color:#ffffff00 !important;
+}
+/*searchbar背景色変更*/
+/*
+.search-bar{
+  background-color:#3a3a3a !important;
+}
+.search-form__container{
+  background-color:#3a3a3a !important;
+}
+*/
+/*header内のロゴ非表示*/
+/*
+div.grid__item.medium-up--one-third.medium-up--push-one-third.logo-align--center > h1{
+  display:none !important;
+}*/
+/*スライド画像のoverlay処理*/
+/*
+.my-overlay{
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: #8c8c8c78;
+  z-index: 2147483647;
+}*/
+/******************************************footer*/
+/*不要なブロック非表示*/
+.site-footer__hr{
+  display:none;
+}
+
+/*
+#shopify-section-footer > footer {
+  background-color: #000000 !important;
+}
+/*footerメニュー*/
+/*
+.h4{
+  display:none;
+}
+/*検索バー位置調整*/
+/*
+.grid__item[class*="--push"]{
+  margin-top:5em;
+}*/
+/*************************************お問い合わせ*/
+/*button*/
+@media screen and (max-width:749px) { 
+  /*ボタン幅調整*/
+  
+  #ContactForm > input.btn{
+    background-color:red;
+    width: 100% !important;
+  }
+  .rte{
+    margin-top: 4em;
+  }
+}
+/*タイトル非表示*/
+.section-header.text-center{
+  display:none;
+}
+/*コメント*/
+.rte{
+  /*margin-top:3.5em;*/
+  background-color:#f3f3f3;
+  padding: 1em;
+}
+/*写真認証*/
+/*コメント*/
+.shopify-challenge__container {
+  margin: 5em auto 0 !important;
+  
+}
+/*button*/
+@media screen and (max-width:749px) { 
+  .shopify-challenge__button.btn{
+    width: 23em;
+    background-color:red;
+  }
+}
+/************************************コレクション**/
+.page-width.list-view-items{
+  margin-top:5em !important;
+}
+.filters-toolbar-wrapper{
+  border-top:none !important;
+}
+/*商品ページメニュー位置*/
+@media screen and (max-width:749px) { 
+  .filters-toolbar__item-wrapper{
+    margin-top:1em;
+  }
+}
+/**********************************商品ページ**/
+/*商品写真位置調整*/
+.grid.product-single.product-single--medium-media{
+  margin-top:4em;
+}
+
+/**********************************アカウント作成*/
+/*ボタン幅調整*/
+@media screen and (max-width:749px) {
+  #RegisterForm > p > input{
+    width:90%;
+  }
+  #RegisterForm{
+    padding-top:4em !important;
+  }
+}
+
+
+/**********************************ログイン*/
+/*ボタン幅調整*/
+@media screen and (max-width:749px) {
+  #customer_login > div > input{
+    width:90%;
+  }
+  #CustomerLoginForm{
+    padding-top:4em !important;
+  }
+}
+
+/**********************************商品一覧*/
+#shopify-section-collection-template{
+  padding-top:3em !important;
+}
+
+/**********************************カート*/
+/*タイトル非表示*/
+#shopify-section-cart-template > div > div:nth-child(1) > div > a{
+  display:none;
+}
+
+@media screen and (max-width:749px) {
+  /*位置調整*/
+  #shopify-section-cart-template > div{
+    margin-top:3em;
+  }
+  /*ボタン位置調整*/
+  div.cart__submit-controls > input{
+    margin-left:1em;
+  }
+    
+}
+
+/*PW再設定*/
+/*タイトル非表示*/
+#MainContent > div > div > div > div > div > form > h1{
+  display:none !important;
+}
+/*位置調整*/
+#MainContent > div > div > div > div > div > form > p{
+  margin-top:4em;
+}
+/*ボタンを中央寄せ*/
+@media screen and (max-width:749px) {
+  #MainContent > div > div > div > div > div > form > input.btn.text-center{
+    margin-left:5% !important;
+  }
+}
+
+/*注文履歴-2*/
+/*位置調整*/
+#MainContent > div > div.grid.myaccount{
+  padding-top: 3em !important;
+}
+/*あなたの住所ページ*/
+/*タイトル非表示*/
+#MainContent > div.page-width.text-center > header > h1{
+  display:none !important;
+}
+/*位置調整*/
+#MainContent > div.page-width.text-center{
+  padding-top:4em !important;
+}

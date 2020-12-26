@@ -1,0 +1,70 @@
+//ナビバー表示
+$(function(){
+   var menu_bar = 
+   '<div class="nav-wrap">'+
+   '<div class="scroll-nav">'+
+     '<ul>'+
+       '<li class="li" id="li-1"><a href="https://aaashoppers.myshopify.com/collections/キャンプアイテム">TENT&TARP</a></li>'+
+       '<li class="li" id="li-2"><a href="https://aaashoppers.myshopify.com/collections/キャンプアイテム">TABLE&CHAIR</a></li>'+
+       '<li class="li" id="li-3"><a href="https://aaashoppers.myshopify.com/collections/キャンプアイテム">ZACK</a></li>'+
+       '<li class="li" id="li-4"><a href="https://aaashoppers.myshopify.com/collections/キャンプアイテム">APPAREL</a></li>'+
+       '<li class="li" id="li-5"><a href="https://aaashoppers.myshopify.com/collections/キャンプアイテム">OTHER</a></li>'+
+     '</ul>'+
+   '</div>'+
+ '</div>';
+     //トップ画像をwrap
+  $('.nav-wrap').wrap('<div class="slide-wrap"></div>');
+  $('#Hero-hero > div').append(menu_bar);
+});
+
+//カテゴリーscroll+fadein処理
+//news fadein処理
+
+$(window).scroll(function (){
+  $('#shopify-section-1607395227071eced4').each(function(){
+    var targetElement = $(this).offset().top;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll > targetElement - windowHeight + 200){
+      $(this).css('opacity','1');
+      $(this).css('transform','translateY(0)');
+    }
+  });
+});
+//カテゴリー１   
+$(window).scroll(function (){
+  $('#shopify-section-16073484759f5f9562 > div').each(function(){
+    var targetElement = $(this).offset().top;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll > targetElement - windowHeight + 200){
+      $(this).css('opacity','1');
+      $(this).css('transform','translateY(0)');
+    }
+  });
+});
+//カテゴリー2
+$(window).scroll(function (){
+  $('#shopify-section-160734855497c45bc2 > div').each(function(){
+    var targetElement = $(this).offset().top;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll > targetElement - windowHeight + 200){
+      $(this).css('opacity','1');
+      $(this).css('transform','translateY(0)');
+    }
+  });
+});
+
+//カテゴリー3
+$(window).scroll(function (){
+  $('#shopify-section-1607348630001b1753 > div').each(function(){
+    var targetElement = $(this).offset().top;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll > targetElement - windowHeight + 200){
+      $(this).css('opacity','1');
+      $(this).css('transform','translateY(0)');
+    }
+  });
+});
