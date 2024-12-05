@@ -1,0 +1,22 @@
+# Shopify specific
+config.yml
+config/settings_data.json
+
+# Node specific
+node_modules/
+.env
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Editor specific
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Build artifacts
+dist/
+build/
+.cache/
